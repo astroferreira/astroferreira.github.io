@@ -107,6 +107,11 @@ a:hover small {
   color:#777;
 }
 
+.wspace {
+
+  width: 20px;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
@@ -242,8 +247,12 @@ header ul a strong {
   color:#222;
 }
 
+.lists h4 {
+  margin-bottom: 0;
+}
+
 section {
-  width: 560px;
+  width: 600px;
   float:right;
   padding-bottom:50px;
 }
