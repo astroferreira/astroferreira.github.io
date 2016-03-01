@@ -115,10 +115,21 @@ a:hover small {
 .topNav {
   text-align: center;
   border-bottom: solid 1px;
+  margin-bottom: 20px
 }
 
 .hspace {
   height: 20px;
+}
+
+header img {
+  margin-left: 0 auto;
+  float: left;
+}
+
+section img {
+  margin: 0 auto;
+  float: left;
 }
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -232,7 +243,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width: 560px;
   float:right;
   padding-bottom:50px;
 }
