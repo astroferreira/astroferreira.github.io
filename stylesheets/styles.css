@@ -123,13 +123,18 @@ a:hover small {
   margin-bottom: 20px
 }
 
+.section{
+  width: 550px;
+  float: left;
+}
+
 .hspace {
   height: 20px;
   width: 100%;
 }
 
 .image-left {
-  height: 250px;
+  height: 225px;
 }
 
 .social-left {
@@ -197,11 +202,11 @@ img {
   max-width:100%;
 }
 
-header {
-  width:270px;
+.wrapper {
+  width:300px;
   float:left;
-  position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  display: block;
 }
 
 header ul {
