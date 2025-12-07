@@ -85,6 +85,70 @@
       allowfullscreen></iframe>
   </div>
 
+  <h3>Illustrations</h3>
+  <p>
+    I also enjoy creating digital illustrations. Here are a few of them:
+  </p>
+
+  <div style="column-count: 3; column-gap: 10px;">
+    <img class="myImg" src="static/illustrations/illustration1.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+    <img class="myImg" src="static/illustrations/illustration2.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+    <img class="myImg" src="static/illustrations/illustration3.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+    <img class="myImg" src="static/illustrations/illustration4.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+    <img class="myImg" src="static/illustrations/illustration5.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+    <img class="myImg" src="static/illustrations/illustration6.png"
+      style="width: 100%; margin-bottom: 10px; border-radius: 5px; display: block;">
+  </div>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("caption");
+
+    // Select all images with class 'myImg'
+    var images = document.getElementsByClassName("myImg");
+
+    for (var i = 0; i < images.length; i++) {
+      images[i].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        // captionText.innerHTML = this.alt;
+      }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // Also close on click outside the image
+    modal.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 
 </html>
